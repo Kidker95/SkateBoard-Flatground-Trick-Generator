@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Skate Trick</title>
+    <link rel="stylesheet" href="randomSkateTrick.css" />
+    <script src="index.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/done/randomSkateTrick/img/icon3.png"
+    />
+  </head>
+  <body>
+    <h1>🛹Random Skate Trick Generator🛹</h1>
+    <div class="container">
+      <img
+        src="/done/randomSkateTrick/img/8bit_skater.gif"
+        alt="skateGif"
+        width="250"
+        height="250"
+      />
+      <h2 id="needsToBeWhite">Over 560 possible combinations!</h2>
+      <button onclick="generateTrick()">Generate Trick</button>
+      <p id="trickDisplay"></p>
+      <button onclick="clearTrick()">Clear</button>
+    </div>
+
+    <script>
+      function generateTrick() {
+        var trick = randomSkateTrick();
+        document.getElementById("trickDisplay").textContent = trick;
+      }
+    </script>
+    <h2>Now go try it!</h2>
+  </body>
+</html>
